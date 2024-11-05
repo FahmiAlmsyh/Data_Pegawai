@@ -19,9 +19,9 @@ class PegawaiDashboardController extends Controller
     }
 
     public function api() {
-        $pegawais = Pegawai::all();
+        $pegawai = Pegawai::all();
 
-        return response()->json($pegawais);
+        return response()->json($pegawai);
     }
 
     /**
