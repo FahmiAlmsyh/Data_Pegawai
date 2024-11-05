@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/pegawai', [PegawaiDashboardController::class, 'index']);
+Route::get('/pegawai', [PegawaiDashboardController::class, 'api']);
