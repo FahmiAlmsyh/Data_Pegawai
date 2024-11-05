@@ -18,6 +18,14 @@ class PegawaiDashboardController extends Controller
         return view('backend.index', compact('pegawai'));
     }
 
+    public function api() {
+        // Fetch all employees
+        $pegawais = Pegawai::all();
+
+        // Return as JSON response
+        return response()->json($pegawais);
+    }
+
     /**
      * Show the form for creating a new resource.
      */
